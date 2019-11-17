@@ -31,5 +31,10 @@ namespace WindowsFormsApp1
             this.tableTableAdapter.Fill(this.database1DataSet.Table);
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
