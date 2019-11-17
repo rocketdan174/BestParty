@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace WindowsFormsApp1
 {
@@ -33,6 +34,33 @@ namespace WindowsFormsApp1
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+            string writePath = @"C:\Users\rocke\Desktop\base.txt";
+
+            using (StreamWriter sw = new StreamWriter(writePath, false, System.Text.Encoding.Default))
+           {
+               sw.WriteLine("Сюда должна выводиться вся база, но я не знаю как.");
+           }
+
+
+        }
+
+       // static void main(string[] args)
+          // {
+           // string constr = "server=localhost;UserControl=root;database=database1dataset;";
+          //  }
+
+        private void отчествоTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bindingNavigatorPositionItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
